@@ -10,13 +10,15 @@ def draw_background():
     screen.fill(COLORS['white'])
 
     # draw game board
-    pygame.draw.rect(screen,COLORS['black'],(0,0,300,900),5)
+    pygame.draw.rect(screen,COLORS['green'],(0,0,300,900),5)    # balck
+    #pygame.draw.rect(screen,COLORS['black'],(0,0,300,900),5)
     pygame.draw.rect(screen,COLORS['black'],(300,0,300,900),5)
     pygame.draw.rect(screen,COLORS['black'],(600,0,300,900),5)
 
     pygame.draw.rect(screen,COLORS['black'],(0,0,900,300),5)
     pygame.draw.rect(screen,COLORS['black'],(0,300,900,300),5)
-    pygame.draw.rect(screen,COLORS['black'],(0,600,900,300),5)
+    # pygame.draw.rect(screen,COLORS['black'],(0,600,900,300),5)
+    pygame.draw.rect(screen,COLORS['red'],(0,600,900,300),5) # black
 
 def draw_choose():
     pygame.draw.rect(screen,COLORS['blue'],(cur_j*100+5,cur_i*100+5,100-10,100-10),0)
